@@ -1,0 +1,24 @@
+{
+  "name": "mint360-create-lead-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + TypeScript POM automation for Mint360 QA - Create Lead flows",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:leads": "playwright test stage-leads.spec.ts",
+    "test:sv-assigned": "playwright test stage-sv-assigned.spec.ts",
+    "test:booking-opportunity": "playwright test stage-booking-opportunity.spec.ts",
+    "test:booking": "playwright test stage-booking.spec.ts",
+    "test:booking-drop": "playwright test stage-booking-drop.spec.ts",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^20.14.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.4"
+  }
+}
