@@ -38,7 +38,7 @@ test.describe('Create Lead - Stage: Leads', () => {
       await createLeadPage.clickNext();
       await createLeadPage.clickSubmit();
     });
-
+    console.log(`Lead created successfully with Name: ${leadName} and Mobile Number: ${mobileNumber}`);
     await test.step('Verify the lead was saved successfully', async () => {
       await createLeadPage.expectLeadSavedSuccessfully();
       await createLeadPage.closeResultDialog();
