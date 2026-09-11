@@ -1,4 +1,6 @@
 // @ts-ignore Playwright is provided by the test runner in the execution environment.
+import 'dotenv/config';
+
 import { test as setup, expect, type Page } from '@playwright/test';
 import { LoginPage } from '../../src/pages/LoginPage';
 
